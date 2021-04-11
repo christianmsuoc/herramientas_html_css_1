@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+
+  div.web-section {
+    background-color: $white;
+    margin: 0;
+    justify-content: center;
+  }
+
+  div.map-section {
+    background-color: $blue-green;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    flex-flow: column-reverse;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    max-height: 100vh;
+    flex-flow: row-reverse;
+    div.web-section {
+      width: 50%;
+      height: 100vh;
+    }
+
+    div.map-section {
+      width: 50%;
+      height: 100vh;
+    }
+  }
+
+}
+
