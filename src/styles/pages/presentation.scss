@@ -1,0 +1,9 @@
+@import "../01_settings.scss";
+
+body {
+  div.map-section {
+    @include mobile-screen {
+      display: none;
+    }
+  }
+}

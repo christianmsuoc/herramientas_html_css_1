@@ -1,17 +1,96 @@
-div.galicia-logo {
-  margin-top: 3vh;
-  text-align: center;
+
+div.map-section {
+  background-color: $blue-green;
+  margin: 0;
+  justify-content: center;
   justify-items: center;
-  img {
-    width: 30%;
+  text-align: center;
+
+  div.galicia-logo {
+    margin-top: 3vh;
+    text-align: center;
+    justify-items: center;
+
+    img {
+      width: 30%;
+    }
+  }
+
+  div.galicia-map {
+    margin-top: 3vh;
+    text-align: center;
+    justify-items: center;
+
+    canvas {
+      width: 70%;
+    }
   }
 }
 
-div.galicia-map {
-  margin-top: 3vh;
-  text-align: center;
-  justify-items: center;
-  canvas {
-    width: 70%;
+
+div.web-section {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  background-color: $white;
+  margin: 0;
+
+  nav {
+    display: flex;
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+
+    @include desktop-screen {
+      flex-flow: row;
+      justify-content: center;
+      margin-top: 10vh;
+    }
+
+    @include mobile-screen {
+      flex-flow: column;
+      align-items: center;
+      margin-top: 3vh;
+    }
+
+    a {
+      display: flex;
+      color: $davys-grey;
+      background-color: $blue-green;
+      text-decoration: none;
+      font-weight: 800;
+      text-align: center;
+      border: solid 1px $davys-grey;
+
+      @include desktop-screen {
+        flex-flow: row wrap;
+        padding: 30px 40px;
+      }
+
+      @include mobile-screen {
+        flex-flow: column wrap;
+        width: 40%;
+        padding: 20px 30px;
+        margin: 5px 0;
+      }
+
+      &:hover {
+        color: lighten($davys-grey, 15%);
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    overflow-y: auto;
   }
 }
+
+
+
+
+

@@ -9,3 +9,8 @@
 .bold {
   font-weight: 600;
 }
+
+
+a.nav-link-active {
+ color: darken($white, 20%) !important;
+}

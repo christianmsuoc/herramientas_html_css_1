@@ -1,17 +1,19 @@
 import galiciaMapImage from './src/images/galicia_no_background.png';
+import './src/scripts/data';
+import {comarcas} from './src/scripts/data';
 import('./comarca-barbanza.html')
+import('./comarca-ferrolterra.html')
+import('./comarca-marina.html')
+import('./galicia.html')
 
 const galiciaMapSection = document.getElementById('galicia-map-section');
-const lavaColor = '#cf081fff';
 const screenWidth = window.innerWidth;
 const isDesktop = screenWidth > 1024;
 
 window.onload = () => {
+
     const canvasWidthAndHeight = Math.trunc(isDesktop ? screenWidth / 3 : screenWidth);
-    const canvas = document.createElement("canvas");
-    canvas.width = canvasWidthAndHeight;
-    canvas.height = canvasWidthAndHeight;
-    canvas.id = 'galicia-canvas';
+    const canvas = createCanvas('galicia-canvas', canvasWidthAndHeight);
 
     getGaliciaMapImage().onload = (e) => {
         const image = e.target;
@@ -27,46 +29,17 @@ window.onload = () => {
 function drawElements(context, canvas) {
     const w = canvas.width;
     const h = canvas.height;
-    const elements = [
-        {
-            color: lavaColor,
-            circleSize: 7,
-            x: Math.trunc(w * 0.18),
-            y: Math.trunc(h * 0.53),
-            sectionId: 'barbanza',
-            url: './comarca-barbanza.html'
-        },
-        {
-            color: lavaColor,
-            circleSize: 7,
-            x: Math.trunc(w * 0.42),
-            y: Math.trunc(h * 0.155),
-            sectionId: 'ferrolterra',
-            url: './comarca-ferrolterra.html'
-        },
-        {
-            color: lavaColor,
-            circleSize: 7,
-            x: Math.trunc(w * 0.665),
-            y: Math.trunc(h * 0.10),
-            sectionId: 'marina',
-            url: './comarca-marina.html'
-        },
-        {
-            color: lavaColor,
-            circleSize: 20,
-            x: Math.trunc(w * 0.5),
-            y: Math.trunc(h * 0.49),
-            sectionId: 'galicia',
-            url: './galicia.html'
-        }
-    ];
-    elements.forEach(e => drawCircle(context, e));
+
+    comarcas.forEach(e => {
+        e.x = Math.trunc(e.x * w);
+        e.y = Math.trunc(e.y * h);
+        drawCircle(context, e)
+    });
 
     canvas.addEventListener('click', function (event) {
         const x = event.pageX - canvas.offsetLeft;
         const y = event.pageY - canvas.offsetTop;
-        elements.forEach(function (e) {
+        comarcas.forEach(function (e) {
             if (pointInCircle(e.x, e.y, x, y, e.circleSize, 50)) {
                 console.log(e.sectionId)
                 window.location = e.url;
@@ -94,5 +67,13 @@ function drawCircle(context, e) {
     context.fillStyle = e.color;
     context.fill();
     context.closePath();
+}
+
+function createCanvas(id, canvasWidthAndHeight) {
+    const canvas = document.createElement("canvas");
+    canvas.width = canvasWidthAndHeight;
+    canvas.height = canvasWidthAndHeight;
+    canvas.id = id;
+    return canvas;
 }
 

@@ -2,3 +2,17 @@ $davys-grey: #464646ff;
 $white: #ffffffff;
 $blue-green: #009acdff;
 $lava: #cf081fff;
+
+$mobileScreenMaxSize: 1024px;
+
+@mixin mobile-screen {
+  @media (max-width: $mobileScreenMaxSize) {
+    @content;
+  }
+}
+
+@mixin desktop-screen {
+  @media (min-width: $mobileScreenMaxSize + 1) {
+    @content;
+  }
+}
