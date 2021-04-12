@@ -36,7 +36,7 @@ function drawElements(context, canvas) {
         drawCircle(context, e)
     });
 
-    canvas.addEventListener('click', function (event) {
+    canvas.addEventListener('click touchstart', function (event) {
         const x = event.pageX - canvas.offsetLeft;
         const y = event.pageY - canvas.offsetTop;
         comarcas.forEach(function (e) {
