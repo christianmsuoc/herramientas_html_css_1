@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parcel:dev": "parcel index.html",
-    "parcel:build": "parcel build index.html",
+    "parcel:dev": "parcel *.html --open",
+    "parcel:build": "parcel build *.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "clean": "rimraf dist .cache .cache-loader"
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "sharp": "^0.28.1"
   },
   "dependencies": {
+    "requirejs": "^2.3.6",
     "src": "^1.1.2"
   }
 }

@@ -3,6 +3,11 @@ import marinaImage from '../../src/images/marina.jpg';
 import ferrolterraImage from '../../src/images/ferrolterra.jpg';
 import galiciaImage from '../../src/images/galicia.jpg';
 
+const barbanza =  fetch('../../comarca-barbanza.html');
+const ferrolterra =  fetch('../../comarca-ferrolterra.html');
+const marina =  fetch('../../comarca-marina.html');
+const galicia =  fetch('../../galicia.html');
+
 const lavaColor = '#cf081fff';
 
 export const comarcas = [
@@ -12,7 +17,7 @@ export const comarcas = [
         x: 0.18,
         y: 0.53,
         sectionId: 'barbanza',
-        url: './comarca-barbanza.html',
+        url: barbanza,
         title: 'Recetas de Barbanza',
         image: barbanzaImage
     },
@@ -22,7 +27,7 @@ export const comarcas = [
         x: 0.42,
         y: 0.155,
         sectionId: 'ferrolterra',
-        url: './comarca-ferrolterra.html',
+        url: ferrolterra,
         title: 'Recetas de Ferrolterra',
         image: ferrolterraImage
     },
@@ -32,7 +37,7 @@ export const comarcas = [
         x: 0.665,
         y: 0.10,
         sectionId: 'marina',
-        url: './comarca-marina.html',
+        url: marina,
         title: 'Recetas de A Mariña',
         image: marinaImage
     },
@@ -42,7 +47,7 @@ export const comarcas = [
         x: 0.5,
         y: 0.49,
         sectionId: 'galicia',
-        url: './galicia.html',
+        url: galicia,
         title: 'Recetas de Galicia',
         image: galiciaImage
     }

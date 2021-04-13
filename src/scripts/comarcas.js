@@ -2,8 +2,11 @@ import {comarcas} from "./data";
 
 document.addEventListener('DOMContentLoaded', () => {
     comarcas.forEach(c => {
-        const comarcaDiv = getComarcaDiv(c.title, c.image, c.url)
-        document.getElementById('section-comarcas-list').appendChild(comarcaDiv);
+        c.url.then(result => {
+            const comarcaDiv = getComarcaDiv(c.title, c.image, result.url)
+            document.getElementById('section-comarcas-list').appendChild(comarcaDiv);
+        })
+
     });
 });
 
@@ -15,7 +18,7 @@ function getComarcaDiv(titleText, url, href) {
 
     const img = document.createElement('img')
     img.src = url;
-    img.onclick = () => {window.location.href = href;}
+    img.onclick = () => {window.location.href = href};
 
     div.appendChild(h2);
     div.appendChild(img);
