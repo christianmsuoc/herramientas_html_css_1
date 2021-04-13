@@ -1,6 +1,7 @@
 import galiciaMapImage from './src/images/galicia_no_background.png';
 import './src/scripts/data';
-import {comarcas} from './src/scripts/data';
+import {data} from './src/scripts/data';
+const empanadaArticle = import('./empanada-article.html')
 
 const galiciaMapSection = document.getElementById('galicia-map-section');
 const screenWidth = window.innerWidth;
@@ -20,12 +21,19 @@ window.onload = () => {
         galiciaMapSection.appendChild(canvas);
         drawElements(ctx, canvas);
     }
+
+    if (typeof displayLastArticle !== "undefined" && displayLastArticle === true) {
+        empanadaArticle.then(content => {
+            const mainSection = document.getElementById('main-section')
+            mainSection.innerHTML = mainSection.innerHTML + content;
+        });
+    }
 }
 
 function drawElements(context, canvas) {
     const w = canvas.width;
     const h = canvas.width;
-    comarcas.forEach(e => {
+    data.comarcas.forEach(e => {
         e.x = e.x * w;
         e.y = e.y * h;
         drawCircle(context, e)
@@ -43,14 +51,9 @@ function mapClick(xEvent, yEvent, canvas) {
     const x = xEvent - canvas.offsetLeft;
     const y = yEvent - canvas.offsetTop;
 
-    comarcas.forEach(function (e) {
+    data.comarcas.forEach(function (e) {
         if (pointInCircle(e.x, e.y, x, y, e.circleSize, 0.02 * screenWidth)) {
-            console.log(e.sectionId)
-            console.log(e.url);
-            e.url.then(result => {
-                console.log(result)
-                window.location = result.url
-            });
+            window.location = e.url
         }
     });
 }

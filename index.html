@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Gastronomía de Galicia</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon/site.webmanifest">
     <link rel="stylesheet" href="./src/styles/style.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -17,6 +21,30 @@
         </nav>
     </header>
     <main>
+        <section id="main-section">
+            <article>
+                <p>Bienvenido a la web de Gastronomía de Galicia!.</p>
+                <p>
+                    En esta web intentaremos dar a conocer recetas de la comunidad de Galicia. La idea es no solo
+                    compartir las
+                    recetas mas conocidas como por ejemplo el Pulpo a feira, sino también otras menos conocidas, o que
+                    son
+                    conocidas únicamente en ciertas comarcas de Galicia.
+                </p>
+
+                <small class="display-only-desktop">
+                    En la parte izquierda de la pantalla se pueden ver las diferentes comarcas. Se puede acceder a las
+                    recetas haciendo click en los puntos rojos.
+                </small>
+
+                <small class="display-only-mobile">
+                    En la parte superior de la pantalla se pueden ver las diferentes comarcas. Se puede acceder a las
+                    recetas haciendo click en los puntos rojos.
+                </small>
+            </article>
+
+        </section>
+
 
     </main>
 </div>
@@ -27,6 +55,9 @@
     <small class="davys-grey-text bold">Haz click en los puntos para ver las recetas de cada comarca</small>
     <div id="galicia-map-section" class="galicia-map"></div>
 </div>
+<script>
+    displayLastArticle = true;
+</script>
 <script src="./index.js"></script>
 </body>
 </html>

@@ -40,12 +40,13 @@ div.web-section {
     width: 100%;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    box-shadow: 0 2px 2px -2px $davys-grey;
 
 
     @include desktop-screen {
       flex-flow: row;
       justify-content: center;
-      margin-top: 10vh;
+      margin-top: 3vh;
     }
 
     @include mobile-screen {
@@ -87,6 +88,72 @@ div.web-section {
     flex-flow: column;
     align-items: center;
     overflow-y: auto;
+  }
+
+  article {
+    margin: 2vh 2vw;
+
+    &.recipe-article {
+      display: flex;
+      flex-flow: column wrap;
+      margin: 20px 2vh;
+
+
+      h1, h2 {
+        text-align: center;
+
+        &.article-with-subtitle {
+          margin-bottom: 0;
+
+          + * {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 2vh;
+
+            &:after {
+              content: ')';
+            }
+
+            &:before {
+              content: '(';
+            }
+          }
+        }
+
+        &:not(.article-with-subtitle) {
+          margin-bottom: 2vh;
+        }
+      }
+
+      div.article-container {
+        position: relative;
+        margin-top: 5vh;
+
+        div.round-image {
+          width: 50%;
+          border-radius: 50%;
+          float: left;
+          shape-outside: circle();
+
+          img {
+            width: 70%;
+          }
+        }
+
+        ul {
+          li {
+            list-style-type: decimal;
+            margin: 20px 0;
+          }
+        }
+
+        div.article-video {
+          margin: 2vh 2vh;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
   }
 }
 

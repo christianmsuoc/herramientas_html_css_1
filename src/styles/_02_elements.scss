@@ -1,3 +1,6 @@
+* {
+  color:  $davys-grey;
+}
 
 body {
   display: flex;
@@ -11,8 +14,26 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
+p, small {
+  color: $davys-grey;
+}
+
+h1, h2 {
   color: $lava;
+  font-weight: 800;
+}
+
+h3, h4, h5, h6 {
+  color:  $davys-grey;
+  font-weight: 800;
+}
+
+ul {
+  li {
+    list-style-type: none;
+    margin: 20px 0;
+    color:  $davys-grey;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -26,6 +47,7 @@ h2 {
     height: 100vh;
     max-height: 100vh;
     flex-flow: row-reverse;
+
     div.web-section {
       width: 50%;
     }

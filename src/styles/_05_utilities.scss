@@ -10,7 +10,18 @@
   font-weight: 600;
 }
 
-
 a.nav-link-active {
  color: darken($white, 20%) !important;
+}
+
+.display-only-desktop {
+  @include mobile-screen {
+    display: none !important;
+  }
+}
+
+.display-only-mobile {
+  @include desktop-screen {
+    display: none !important;
+  }
 }

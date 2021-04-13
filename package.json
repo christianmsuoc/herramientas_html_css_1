@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parcel:dev": "parcel *.html --open",
+    "parcel:dev": "parcel *.html --open http://localhost:1234/index.html",
     "parcel:build": "parcel build *.html --no-source-maps --no-cache",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
@@ -21,7 +21,6 @@
     "sharp": "^0.28.1"
   },
   "dependencies": {
-    "requirejs": "^2.3.6",
     "src": "^1.1.2"
   }
 }
