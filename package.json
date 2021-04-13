@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "parcel:dev": "parcel *.html --open",
-    "parcel:build": "parcel build *.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
+    "parcel:build": "parcel build *.html --dist-dir dist --no-source-maps --no-cache",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache"
