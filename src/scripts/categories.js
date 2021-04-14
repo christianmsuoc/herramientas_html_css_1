@@ -1,11 +1,7 @@
 import {data} from "./data";
 
-document.addEventListener('DOMContentLoaded', () => {
-    buildCategoryListSection(data[categoryType], 'category-list');
-});
-
-function buildCategoryListSection(items, elementIdToLoad) {
-    items.forEach(i => {
+function buildCategoryListSection(categoryType, elementIdToLoad) {
+    data[categoryType].forEach(i => {
         const comarcaDiv = buildCategory(i.title, i.image, i.url)
         document.getElementById(elementIdToLoad).appendChild(comarcaDiv);
     });

@@ -42,9 +42,11 @@
 
 
 <script src="./index.js"></script>
-<script>
-    const categoryType = 'recipesBarbanza';
-</script>
 <script src="./src/scripts/categories.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        buildCategoryListSection('recipesBarbanza', 'category-list');
+    });
+</script>
 </body>
 </html>

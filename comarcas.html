@@ -41,9 +41,11 @@
 
 
 <script src="./index.js"></script>
-<script>
-    const categoryType = 'comarcas';
-</script>
 <script src="./src/scripts/categories.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        buildCategoryListSection('comarcas', 'category-list');
+    });
+</script>
 </body>
 </html>
