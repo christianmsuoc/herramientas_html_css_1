@@ -2,26 +2,12 @@ import barbanzaImage from '../images/comarcas/barbanza.jpg';
 import marinaImage from '../images/comarcas/marina.jpg';
 import ferrolterraImage from '../images/comarcas/ferrolterra.jpg';
 import galiciaImage from '../images/comarcas/galicia.jpg';
-
 import empanadaImage from '../images/recetas/empanada_maiz.png';
 import huevosPanMaizImage from '../images/recetas/huevos_pan_maiz.png';
 
 const lavaColor = '#cf081fff';
 
-
 export const data = {
-    recipesBarbanza: [
-        {
-            url: '../../receta-empanada.html',
-            title: 'Empanada de maíz',
-            image: empanadaImage
-        },
-        {
-            url: '../../receta-huevos-pan-maiz.html',
-            title: 'Huevos con pan de maíz',
-            image: huevosPanMaizImage
-        }
-    ],
     comarcas: [
         {
             color: lavaColor,
@@ -63,29 +49,19 @@ export const data = {
             title: 'Recetas de Galicia',
             image: galiciaImage
 
-        }]
+        }],
+    recipesBarbanza: [
+        {
+            url: '../../receta-empanada.html',
+            title: 'Empanada de maíz',
+            image: empanadaImage
+        },
+        {
+            url: '../../receta-huevos-pan-maiz.html',
+            title: 'Huevos con pan de maíz',
+            image: huevosPanMaizImage
+        }
+    ]
 }
 
-export function buildCategoryListSection(items, elementIdToLoad) {
-    items.forEach(i => {
-        const comarcaDiv = buildCategory(i.title, i.image, i.url)
-        document.getElementById(elementIdToLoad).appendChild(comarcaDiv);
-    });
-}
 
-export function buildCategory(titleText, url, href) {
-    const div = document.createElement('div');
-
-    const h2 = document.createElement('h2');
-    h2.innerText = titleText;
-
-    const img = document.createElement('img')
-    img.src = url;
-    img.onclick = () => {
-        window.location.href = href
-    };
-
-    div.appendChild(h2);
-    div.appendChild(img);
-    return div;
-}

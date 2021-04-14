@@ -1,8 +1,5 @@
 import galiciaMapImage from './src/images/galicia_no_background.png';
-import './src/scripts/data';
 import {data} from './src/scripts/data';
-
-const empanadaArticle = import('./empanada-article.html')
 
 const galiciaMapSection = document.getElementById('galicia-map-section');
 const screenWidth = window.innerWidth;
