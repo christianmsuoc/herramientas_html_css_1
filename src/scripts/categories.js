@@ -1,9 +1,15 @@
 import {data} from "./data";
 
-function buildCategoryListSection(categoryType, elementIdToLoad) {
+window.onload = () => {
+    const sectionToLoadIn = document.getElementById('category-list')
+    buildCategoryListSection(sectionToLoadIn.dataset.categories, sectionToLoadIn)
+}
+
+function buildCategoryListSection(categoryType, sectionToLoadIn) {
+    console.log(data[categoryType])
     data[categoryType].forEach(i => {
         const comarcaDiv = buildCategory(i.title, i.image, i.url)
-        document.getElementById(elementIdToLoad).appendChild(comarcaDiv);
+        sectionToLoadIn.appendChild(comarcaDiv);
     });
 }
 

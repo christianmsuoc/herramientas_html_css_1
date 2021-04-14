@@ -29,7 +29,7 @@
     </header>
     <main>
         <h1>Barbanza</h1>
-        <section id="category-list" class="categories-list"></section>
+        <section id="category-list" class="categories-list" data-categories="recipesBarbanza"></section>
     </main>
 </div>
 <div class="map-section" id="map-section">
@@ -40,13 +40,7 @@
     <div id="galicia-map-section" class="galicia-map"></div>
 </div>
 
-
 <script src="./index.js"></script>
 <script src="./src/scripts/categories.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        buildCategoryListSection('recipesBarbanza', 'category-list');
-    });
-</script>
 </body>
 </html>
