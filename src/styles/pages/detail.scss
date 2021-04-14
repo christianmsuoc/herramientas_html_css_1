@@ -6,4 +6,25 @@ body {
       display: none;
     }
   }
+
+  article.related {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-weight: 800;
+      font-size: larger;
+    }
+
+    a {
+      text-decoration: none;
+      color: $lava;
+
+      &:hover {
+        color: lighten($lava, 20%);
+      }
+    }
+  }
 }

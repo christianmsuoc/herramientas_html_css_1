@@ -21,6 +21,7 @@
     "sharp": "^0.28.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "src": "^1.1.2"
   }
 }

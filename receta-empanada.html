@@ -2,24 +2,107 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Comarcas</title>
+    <title>Empanada de maiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./src/styles/style.scss">
+    <link rel="stylesheet" href="./src/styles/pages/detail.scss">
     <link rel="stylesheet" href="src/styles/pages/comarcas-recipes-list.scss">
 </head>
 <body>
 <div class="web-section">
     <nav>
-        <a href="./index.html"> Inicio </a>
-        <a href="./comarcas.html" class="nav-link-active"> Comarcas </a>
-        <a href="./presentation.html"> Presentación </a>
-        <a href="./comarcas.html"> Enlaces </a>
+        <a href="./index.html">
+            <i class="fa fa-home"></i> Inicio
+        </a>
+        <a href="./comarcas.html" class="nav-link-active">
+            <i class="fas fa-map-marker-alt"></i> Comarcas
+        </a>
+        <a href="./presentation.html"> <i class="fab fa-slideshare"></i> Presentación </a>
+        <a href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
     </nav>
     <main>
-        <section id="article-section">
+        <section>
+            <article class="recipe-article">
+                <h2>Empana de mejillones</h2>
+
+                <div class="article-container">
+                    <div class="round-image">
+                        <img src="src/images/recetas/empanada_maiz.png" alt="Empana de maiz">
+                    </div>
+                    <p>
+                        Cuando vayáis a Galicia y veáis en un restaurante empanada de millo con croques… entrad y pedid
+                        un
+                        trozo, es una de las recetas estrella de mi tierra. Y si quedáis contentos, la receta la tenéis
+                        en
+                        vuestras manos.
+
+                        Una empanada estrella con la que recordaréis Galicia y su costa, todo el sabor a mar que te
+                        traslada
+                        a terras galegas de un plumazo.
+
+                        No os voy a engañar, es una empanada laboriosa pero que merece la pena. El trabajo viene de la
+                        masa
+                        de maíz que es difícil de manipular pero que da a la empanada una textura crujiente difícil de
+                        superar.
+
+                        Una vez dominada la técnica de la empanada de millo podréis variar el relleno.
+
+                        Además de los berberechos, la podéis encontrar de berberechos y bacalao, pulpo, zamburiñas,
+                        vieiras,
+                        sardinas, xoubas o parrochas, e incluso de congrio. Espero que os guste y os animéis con ella.
+                    </p>
+
+                    <h3>Desbabar los berberechos antes de cocinar</h3>
+
+                    <ul>
+                        <li>
+                            Los berberechos estaban muy frescos, y la verdad es que traían muy poca arena de la Ría,
+                            pero es fundamental quitar bien esa arena que para que no sea molesta y no nos estropee la
+                            receta.
+                        </li>
+                        <li>
+                            Este proceso en Galicia se llama “desbabar”, lo mejor es hacerlo en agua de mar pero aquí en
+                            Madrid no es fácil conseguirla, así que lo haremos en agua con abundante sal.
+                        </li>
+                        <li>
+                            Debemos colocar los berberechos en un bol grande con abundante agua fría y un buen puñado de
+                            sal gruesa.
+                        </li>
+                        <li>
+                            Los dejo 3 horas en este agua con sal. Unos 6 gramos de sal por 1 litro de agua y cambiando
+                            tres veces el agua, una vez cada hora.
+                        </li>
+                        <li>
+                            Así los berberechos tragan el agua con sal limpia expulsando la tierra que traen.
+                        </li>
+                        <li>
+                            Los movemos un poco con las manos, los de abajo para arriba para que si están amontonados
+                            expulsen todos la arena.
+                        </li>
+                        <li>
+                            Sacamos los berberechos y escurrimos el agua. Reservamos.
+                        </li>
+                    </ul>
+
+                    <div class="article-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hd71_nTNcig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="related">
+                <h3>Relacionados</h3>
+                <a href="./receta-huevos-pan-maiz.html"> Huevos con pan de maíz</a>
+            </article>
 
         </section>
     </main>
@@ -34,10 +117,5 @@
 
 
 <script src="./index.js"></script>
-<script>
-    const recipesFrom = 'recetasBarbanza';
-    const idToInsert = 'article-section';
-</script>
-<script src="./src/scripts/detail.js"></script>
 </body>
 </html>

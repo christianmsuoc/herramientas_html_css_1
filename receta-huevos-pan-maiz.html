@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Huevos con pan de maíz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./src/styles/style.scss">
+    <link rel="stylesheet" href="./src/styles/pages/detail.scss">
+    <link rel="stylesheet" href="src/styles/pages/comarcas-recipes-list.scss">
+</head>
+<body>
+<div class="web-section">
+    <nav>
+        <a href="./index.html">
+            <i class="fa fa-home"></i> Inicio
+        </a>
+        <a href="./comarcas.html" class="nav-link-active">
+            <i class="fas fa-map-marker-alt"></i> Comarcas
+        </a>
+        <a href="./presentation.html"> <i class="fab fa-slideshare"></i> Presentación </a>
+        <a href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
+    </nav>
+    <main>
+        <section>
+            <article class="recipe-article">
+                <h2>Huevos con pan de maíz</h2>
+
+                <div class="article-container">
+                    <div class="round-image">
+                        <img src="src/images/recetas/huevos_pan_maiz.png" alt="Huevos con pan de maíz">
+                    </div>
+                    <p>
+                        Esta receta la recuerdo desde niña en mi casa, huele a mi abuela paterna 🤶, a mi padre
+                        cocinando de noche, a huevos recién cogidos...😍
+                        Mi abuela hacía en casa un pan de maíz en el horno de leña exquisito y crujiente. Mi padre me
+                        contaba que desde mucho tiempo atrás se usaba el pan desmenuzado con unos huevos de casa como un
+                        plato muy rico y enérgico para poder trabajar felizmente en la finca 😉 💪.
+                        A mi me encanta y de vez en cuando aprovecho que en la panadería de al lado de casa hacen los
+                        sábados un pan de maíz delicioso y con unos huevos de casa de mi abuela, os dejo un plato de
+                        diez 😋. #familiar
+                    </p>
+
+                    <p>
+                        Para preparar la receta de Huevos fritos con pan de millo:
+
+                        desmigamos un poco de pan de millo en un plato, freímos los pimientos de padrón en una sartén
+                        con bastante aceite de oliva no muy fuerte; retiramos los pimientos a un plato con papel de
+                        cocina para que los pimientos no tengan exceso de aceite y les echamos sal gorda o sal maldon;
+                        en ese mismo aceite freimos dos huevos por persona, mejor si son huevos de "casa" una vez fritos
+                        los echamos encima de la cama de pan de millo y los rompemos,
+                    </p>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul class="no-numbers">
+                        <li>
+                            1 cebolla
+                        </li>
+                        <li>
+                            2 huevos
+                        </li>
+                        <li>
+                            Pan de maíz
+                        </li>
+                        <li>
+                            Aceite
+                        </li>
+                    </ul>
+
+                    <h3>Pasos</h3>
+
+                    <ul>
+                        <li>Picamos el pan de maíz con una cantidad que cubra bien el plato hondo.</li>
+                        <li>Echamos en una sartén una cantidad generosa de aceite y cortamos la cebolla para dejar que
+                            se vaya haciendo un poco, antes de echar los huevos.
+                        </li>
+                        <li>
+                            Cuando la cebolla esté un poco hecha, incorporamos los huevos a la sartén y dejamos que se
+                            hagan sin que se nos quede dura la yema. Será la clave para que nos quede más rico.
+                        </li>
+                        <li>
+                            Una vez que están, los echamos sobre el pan que habíamos triturado
+                        </li>
+                        <li>
+                            olo nos queda aplastar con un tenedor para que pan y huevo queden perfectamente integrados y
+                            disfrutar así calentito nuestro delicioso plato
+                        </li>
+                    </ul>
+                </div>
+
+
+            </article>
+
+            <article class="related">
+                <h3>Relacionados</h3>
+                <a href="./receta-empanada.html"> Empanada de mejillones</a>
+            </article>
+
+        </section>
+    </main>
+</div>
+<div class="map-section" id="map-section">
+    <div class="galicia-logo">
+        <img src="./src/images/logo_bandera.png" alt="logo bandera galicia">
+    </div>
+    <small class="davys-grey-text bold">Haz click en los puntos para ver las recetas de cada comarca</small>
+    <div id="galicia-map-section" class="galicia-map"></div>
+</div>
+
+
+<script src="./index.js"></script>
+</body>
+</html>

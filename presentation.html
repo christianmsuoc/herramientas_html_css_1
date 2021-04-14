@@ -3,24 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Presentación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./src/styles/style.scss">
+    <link rel="stylesheet" href="./src/styles/pages/presentation.scss">
 </head>
 <body>
 <div class="web-section">
     <header>
         <nav>
-            <a href="./index.html"> Inicio </a>
-            <a href="./comarcas.html"> Comarcas </a>
-            <a href="./presentation.html" class="nav-link-active"> Presentación </a>
-            <a href="./links.html"> Enlaces </a>
+            <a href="./index.html">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a href="./comarcas.html">
+                <i class="fas fa-map-marker-alt"></i> Comarcas
+            </a>
+            <a href="./presentation.html" class="nav-link-active"> <i class="fab fa-slideshare"></i> Presentación </a>
+            <a href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
         </nav>
     </header>
     <main>
+        <section>
+            <h1>Presentación</h1>
+            <article>
+                <h2>Inicio</h2>
+                <p>
+                    En la página de inicio se presenta en la parte izquierda de la pantalla un mapa de galicia con las
+                    diferentes comarcas en las cuales hay gastronomía local. Hay muchas mas en Galicia con estas
+                    características pero sería un trabajo a completar incluirlas todas
+                </p>
 
+                <p>
+                    En la parte superior derecha se puede ver el menú de navegación y debajo la última receta añadida
+                </p>
+
+                <div class="image-holder">
+                    <img src="./src/images/presentation/inicio.png" alt="imagen de la página de inicio">
+                </div>
+            </article>
+
+            <article>
+                <h2>Comarcas</h2>
+                <p>
+                    En esta página se pueden ver las diferentes comarcas, para poder ver alguna de las recetas se debe
+                    hacer click en la imagen representativa de cada una de las comarcas
+                </p>
+
+                <p>
+                    Alternativamente podemos hacer click en el mapa para poder consultar las diferentes comarcas.
+                    Podemos
+                    ver una imagen que las relaciona:
+                </p>
+
+                <div class="image-holder">
+                    <img src="./src/images/presentation/comarcas.png" alt="imagen de la página de inicio">
+                </div>
+
+            </article>
+
+            <article>
+                <h2>Presentación</h2>
+                <p>
+                    Esta misma página en la que se presentan las diferente secciones de la página.
+                </p>
+            </article>
+
+            <article>
+                <h2>Enlaces</h2>
+                <p>
+                    Sección donde se exponen links a los diferentes recursos utilizados para la realización del sitio
+                    web.
+                </p>
+            </article>
+
+            <article>
+                <h2>Detalle o receta</h2>
+                <p>
+                    En esta sección se incluyen los detalles de cada uno de los platos. Puede ser una receta o una
+                    simple
+                    recopilación de ingredientes con algún tipo de historia
+                </p>
+
+                <p>
+                    Al final de la página de detalle se puede navegar a a otras recetas relacionadas
+                </p>
+            </article>
+        </section>
     </main>
 </div>
 <div class="map-section" id="map-section">

@@ -36,13 +36,29 @@ ul {
   }
 }
 
-@media (max-width: 1024px) {
-  body {
-    flex-flow: column-reverse;
-  }
+i {
+  margin: 0 5px;
 }
 
-@media (min-width: 1025px) {
+@include mobile-screen {
+  body {
+    flex-flow: column-reverse;
+    div.web-section {
+      width: 100%;
+    }
+
+    div.map-section {
+      width: 100%;
+    }
+  }
+
+  ul {
+    padding-inline-start: 10px;
+  }
+
+}
+
+@include desktop-screen {
   body {
     height: 100vh;
     max-height: 100vh;
@@ -56,6 +72,5 @@ ul {
       width: 50%;
     }
   }
-
 }
 

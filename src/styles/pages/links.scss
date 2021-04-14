@@ -6,4 +6,36 @@ body {
       display: none;
     }
   }
+
+  section {
+    display: flex;
+    width: 90%;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 2vw;
+
+    ul {
+      li {
+        text-align: left;
+        a {
+          margin-left: 10px;
+          display: inline-block;
+          text-decoration: none;
+          color: $lava;
+          font-weight: 800;
+          font-size: larger;
+          &:after {
+            content: ':  ';
+          }
+        }
+        list-style-type: upper-roman;
+
+        p {
+          display: inline-block;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }

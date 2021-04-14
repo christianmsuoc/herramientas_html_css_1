@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Comarcas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./src/styles/style.scss">
     <link rel="stylesheet" href="src/styles/pages/comarcas-recipes-list.scss">
 </head>
 <body>
 <div class="web-section">
-    <nav>
-        <a href="./index.html"> Inicio </a>
-        <a href="./comarcas.html" class="nav-link-active"> Comarcas </a>
-        <a href="./presentation.html"> Presentación </a>
-        <a href="./comarcas.html"> Enlaces </a>
-    </nav>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a href="./comarcas.html" class="nav-link-active">
+                <i class="fas fa-map-marker-alt"></i> Comarcas
+            </a>
+            <a href="./presentation.html"> <i class="fab fa-slideshare"></i> Presentación </a>
+            <a href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
+        </nav>
+    </header>
+
     <main>
         <section id="category-list" class="categories-list"></section>
     </main>

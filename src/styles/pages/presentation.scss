@@ -6,4 +6,44 @@ body {
       display: none;
     }
   }
+
+  section {
+    display: flex;
+    width: 90%;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 2vw;
+
+    h1 {
+      font-size: xx-large;
+    }
+
+    article {
+      display: flex;
+      flex-flow: column wrap;
+      text-align: left;
+
+      h2 {
+        color: $blue-green;
+        text-decoration: underline;
+
+        &:after {
+          content: ': ';
+        }
+      }
+
+      div.image-holder {
+        align-self: center;
+        width: 70%;
+      }
+
+      img {
+        margin-top: 2vh;
+        border: solid 1px lighten($davys-grey, 40%);
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
 }

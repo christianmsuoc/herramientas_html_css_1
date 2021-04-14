@@ -12,6 +12,9 @@
 
 a.nav-link-active {
  color: darken($white, 20%) !important;
+  i {
+    color: darken($white, 20%) !important;
+  }
 }
 
 .display-only-desktop {
@@ -23,5 +26,11 @@ a.nav-link-active {
 .display-only-mobile {
   @include desktop-screen {
     display: none !important;
+  }
+}
+
+ul.no-numbers {
+  li {
+    list-style-type: circle !important;
   }
 }

@@ -4,17 +4,22 @@ import ferrolterraImage from '../images/comarcas/ferrolterra.jpg';
 import galiciaImage from '../images/comarcas/galicia.jpg';
 
 import empanadaImage from '../images/recetas/empanada_maiz.png';
+import huevosPanMaizImage from '../images/recetas/huevos_pan_maiz.png';
 
 const lavaColor = '#cf081fff';
 
 
 export const data = {
-    recetasBarbanza: [
+    recipesBarbanza: [
         {
             url: '../../receta-empanada.html',
             title: 'Empanada de maíz',
-            image: empanadaImage,
-            articleTemplate: import('../../empanada-article.html')
+            image: empanadaImage
+        },
+        {
+            url: '../../receta-huevos-pan-maiz.html',
+            title: 'Huevos con pan de maíz',
+            image: huevosPanMaizImage
         }
     ],
     comarcas: [
@@ -59,18 +64,6 @@ export const data = {
             image: galiciaImage
 
         }]
-}
-
-export function buildFromTemplate(location, recipesFrom, idToInsert) {
-    const recipe = data[recipesFrom]
-        .find(recipe => location === recipe.url.split('/').splice(-1, 1).toString());
-    if (recipe?.articleTemplate) {
-        console.log(recipe.articleTemplate);
-        recipe.articleTemplate.then(content => {
-            const mainSection = document.getElementById(idToInsert)
-            mainSection.innerHTML = mainSection.innerHTML + content;
-        })
-    }
 }
 
 export function buildCategoryListSection(items, elementIdToLoad) {

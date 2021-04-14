@@ -66,7 +66,7 @@ div.web-section {
 
       @include desktop-screen {
         flex-flow: row wrap;
-        padding: 30px 40px;
+        padding: 30px 1.5vw;
       }
 
       @include mobile-screen {
@@ -78,6 +78,9 @@ div.web-section {
 
       &:hover {
         color: lighten($davys-grey, 15%);
+        i {
+          color: lighten($davys-grey, 15%);
+        }
       }
     }
   }
@@ -88,69 +91,75 @@ div.web-section {
     flex-flow: column;
     align-items: center;
     overflow-y: auto;
-  }
-
-  article {
-    margin: 2vh 2vw;
-
-    &.recipe-article {
-      display: flex;
-      flex-flow: column wrap;
-      margin: 20px 2vh;
 
 
-      h1, h2 {
-        text-align: center;
+    article {
+      margin: 2vh 2vw;
 
-        &.article-with-subtitle {
-          margin-bottom: 0;
-
-          + * {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 2vh;
-
-            &:after {
-              content: ')';
-            }
-
-            &:before {
-              content: '(';
-            }
-          }
-        }
-
-        &:not(.article-with-subtitle) {
-          margin-bottom: 2vh;
-        }
+      @include mobile-screen {
+        width: 100%;
       }
 
-      div.article-container {
-        position: relative;
-        margin-top: 5vh;
+      &.recipe-article {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 20px 2vh;
 
-        div.round-image {
-          width: 50%;
-          border-radius: 50%;
-          float: left;
-          shape-outside: circle();
 
-          img {
-            width: 70%;
+        h1, h2 {
+          text-align: center;
+
+          &.article-with-subtitle {
+            margin-bottom: 0;
+
+            + * {
+              text-align: center;
+              margin-top: 0;
+              margin-bottom: 2vh;
+
+              &:after {
+                content: ')';
+              }
+
+              &:before {
+                content: '(';
+              }
+            }
+          }
+
+          &:not(.article-with-subtitle) {
+            margin-bottom: 2vh;
           }
         }
 
-        ul {
-          li {
-            list-style-type: decimal;
-            margin: 20px 0;
-          }
-        }
+        div.article-container {
+          position: relative;
+          margin-top: 5vh;
 
-        div.article-video {
-          margin: 2vh 2vh;
-          display: flex;
-          justify-content: center;
+          div.round-image {
+            width: 50%;
+            border-radius: 50%;
+            float: left;
+            shape-outside: circle();
+
+            img {
+              border-radius: 50%;
+              width: 70%;
+            }
+          }
+
+          ul {
+            li {
+              list-style-type: decimal;
+              margin: 20px 0;
+            }
+          }
+
+          div.article-video {
+            margin: 2vh 2vh;
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }
