@@ -86,24 +86,30 @@ div.web-section {
   }
 
   main {
-    display: flex;
-    width: 100%;
-    flex-flow: column;
-    align-items: center;
-    overflow-y: auto;
+
+    @include desktop-screen {
+      display: flex;
+      width: 100%;
+      flex-flow: column;
+      align-items: center;
+      overflow-y: auto;
+    }
+
+    @include mobile-screen {
+      width: 100%;
+    }
 
 
     article {
       margin: 2vh 2vw;
 
-      @include mobile-screen {
-        width: 100%;
-      }
-
       &.recipe-article {
-        display: flex;
-        flex-flow: column wrap;
-        margin: 20px 2vh;
+
+        @include desktop-screen {
+          display: flex;
+          flex-flow: column wrap;
+          margin: 20px 2vh;
+        }
 
 
         h1, h2 {

@@ -1,14 +1,13 @@
 import {data} from "./data";
 
-window.onload = () => {
-    const sectionToLoadIn = document.getElementById('category-list')
-    buildCategoryListSection(sectionToLoadIn.dataset.categories, sectionToLoadIn)
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const sectionToLoadIn = document.getElementById('category-list');
+    buildCategoryListSection(sectionToLoadIn.dataset.categories, sectionToLoadIn);
+});
 
 function buildCategoryListSection(categoryType, sectionToLoadIn) {
-    console.log(data[categoryType])
     data[categoryType].forEach(i => {
-        const comarcaDiv = buildCategory(i.title, i.image, i.url)
+        const comarcaDiv = buildCategory(i.title, i.image, i.url);
         sectionToLoadIn.appendChild(comarcaDiv);
     });
 }
@@ -19,7 +18,7 @@ function buildCategory(titleText, url, href) {
     const h2 = document.createElement('h2');
     h2.innerText = titleText;
 
-    const img = document.createElement('img')
+    const img = document.createElement('img');
     img.src = url;
     img.onclick = () => {
         window.location.href = href

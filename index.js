@@ -19,13 +19,6 @@ window.onload = () => {
         galiciaMapSection.appendChild(canvas);
         drawElements(ctx, canvas);
     }
-
-    if (typeof displayLastArticle !== "undefined" && displayLastArticle === true) {
-        empanadaArticle.then(content => {
-            const mainSection = document.getElementById('main-section')
-            mainSection.innerHTML = mainSection.innerHTML + content;
-        });
-    }
 }
 
 function drawElements(context, canvas) {
