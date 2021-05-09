@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function buildCategoryListSection(categoryType, sectionToLoadIn) {
     data[categoryType].forEach(i => {
-        const comarcaDiv = buildCategory(i.title, i.image, i.url);
+        const comarcaDiv = buildCategory(i.title, i.image, i.url, i.alt);
         sectionToLoadIn.appendChild(comarcaDiv);
     });
 }
 
-function buildCategory(titleText, url, href) {
+function buildCategory(titleText, url, href, alt) {
     const div = document.createElement('div');
 
     const h2 = document.createElement('h2');
@@ -20,6 +20,7 @@ function buildCategory(titleText, url, href) {
 
     const img = document.createElement('img');
     img.src = url;
+    img.alt = alt;
     img.onclick = () => {
         window.location.href = href
     };
