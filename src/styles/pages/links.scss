@@ -18,6 +18,7 @@ body {
     ul {
       li {
         text-align: left;
+
         a {
           margin-left: 10px;
           display: inline-block;
@@ -25,10 +26,12 @@ body {
           color: $lava;
           font-weight: 800;
           font-size: larger;
+
           &:after {
             content: ':  ';
           }
         }
+
         list-style-type: upper-roman;
 
         p {

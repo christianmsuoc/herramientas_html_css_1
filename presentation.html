@@ -42,7 +42,19 @@
                 </p>
 
                 <div class="image-holder">
-                    <img src="./src/images/presentation/inicio.png" alt="imagen de la página de inicio">
+                    <picture>
+                        <img
+                                sizes="(max-width: 1246px) 100vw, 1246px"
+                                srcset="
+                                    ./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_190.png 190w,
+                                    ./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_456.png 456w,
+                                    ./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_648.png 648w,
+                                    ./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_811.png 811w,
+                                    ./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_1012.png 1012w,
+                                    ./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_1246.png 1246w"
+                                src="./src/images/presentation/inicio/inicio_hrrow0_c_scale_w_1246.png"
+                                alt="imagen de la página de inicio">
+                    </picture>
                 </div>
             </article>
 
@@ -60,7 +72,27 @@
                 </p>
 
                 <div class="image-holder">
-                    <img src="./src/images/presentation/comarcas.png" alt="imagen de la página de inicio">
+                    <picture>
+                        <img
+                                sizes="(max-width: 1688px) 100vw, 1688px"
+                                srcset="
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_190.png 190w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_461.png 461w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_648.png 648w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_813.png 813w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_948.png 948w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1079.png 1079w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1184.png 1184w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1298.png 1298w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1390.png 1390w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1476.png 1476w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1567.png 1567w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1658.png 1658w,
+                                    ./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1688.png 1688w"
+                                src="./src/images/presentation/comarcas/comarcas_eb5wnb_c_scale_w_1688.png"
+                                alt="imagen de la página de comarcas">
+                    </picture>
+
                 </div>
 
             </article>
@@ -93,15 +125,64 @@
                 </p>
 
                 <div class="image-holder">
-                    <img src="./src/images/presentation/detalle.png" alt="imagen de la página de inicio">
+                    <picture>
+                        <img
+                                sizes="(max-width: 1225px) 100vw, 1225px"
+                                srcset="
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_190.png 190w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_364.png 364w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_493.png 493w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_601.png 601w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_704.png 704w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_797.png 797w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_889.png 889w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_901.png 901w,
+                                    ./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_1225.png 1225w"
+                                src="./src/images/presentation/detalle/detalle_gbqm9h_c_scale_w_1225.png"
+                                alt="imagen de la página de detalle o receta">
+                    </picture>
                 </div>
             </article>
         </section>
     </main>
+    <footer>
+        <div class="footer-wrapper">
+            <a href="./index.html" class="footer-index">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a class="footer-comarcas" href="./comarcas.html">
+                <i class="fas fa-map-marker-alt"></i> Comarcas
+            </a>
+            <a class="footer-presentation nav-link-active" href="./presentation.html"> <i class="fab fa-slideshare"></i> Presentación
+            </a>
+            <a class="footer-links" href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
+            <div class="footer-logo">
+                <picture>
+                    <img
+                            sizes="(max-width: 1920px) 100vw, 1920px"
+                            srcset="
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_190.png 190w,
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_947.png 947w,
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png 1920w"
+                            src="src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png"
+                            alt="logo bandera galicia">
+                </picture>
+            </div>
+        </div>
+    </footer>
 </div>
 <div class="map-section" id="map-section">
     <div class="galicia-logo">
-        <img src="./src/images/logo_bandera.png" alt="logo bandera galicia">
+        <picture>
+            <img
+                    sizes="(max-width: 1920px) 100vw, 1920px"
+                    srcset="
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_190.png 190w,
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_947.png 947w,
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png 1920w"
+                    src="src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png"
+                    alt="logo bandera galicia">
+        </picture>
     </div>
     <small class="davys-grey-text bold">Haz click en los puntos para ver las recetas de cada comarca</small>
     <div id="galicia-map-section" class="galicia-map"></div>

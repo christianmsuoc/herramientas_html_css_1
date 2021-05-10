@@ -32,7 +32,20 @@
 
                 <div class="article-container">
                     <div class="round-image">
-                        <img src="src/images/recetas/empanada_maiz.png" alt="Empana de maiz">
+                        <picture>
+                            <img
+                                    sizes="(max-width: 1200px) 100vw, 1200px"
+                                    srcset="
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_200.png 200w,
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_572.png 572w,
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_819.png 819w,
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_1003.png 1003w,
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_1151.png 1151w,
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_1197.png 1197w,
+                                        ./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_1200.png 1200w"
+                                    src="./src/images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_1200.png"
+                                    alt="Empanada de maíz">
+                        </picture>
                     </div>
                     <p>
                         Cuando vayáis a Galicia y veáis en un restaurante empanada de millo con croques… entrad y pedid
@@ -106,10 +119,44 @@
 
         </section>
     </main>
+    <footer>
+        <div class="footer-wrapper">
+            <a href="./index.html" class="footer-index">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a class="footer-comarcas" href="./comarcas.html">
+                <i class="fas fa-map-marker-alt"></i> Comarcas
+            </a>
+            <a class="footer-presentation" href="./presentation.html"> <i class="fab fa-slideshare"></i> Presentación
+            </a>
+            <a class="footer-links" href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
+            <div class="footer-logo">
+                <picture>
+                    <img
+                            sizes="(max-width: 1920px) 100vw, 1920px"
+                            srcset="
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_190.png 190w,
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_947.png 947w,
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png 1920w"
+                            src="src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png"
+                            alt="logo bandera galicia">
+                </picture>
+            </div>
+        </div>
+    </footer>
 </div>
 <div class="map-section" id="map-section">
     <div class="galicia-logo">
-        <img src="./src/images/logo_bandera.png" alt="logo bandera galicia">
+        <picture>
+            <img
+                    sizes="(max-width: 1920px) 100vw, 1920px"
+                    srcset="
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_190.png 190w,
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_947.png 947w,
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png 1920w"
+                    src="src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png"
+                    alt="logo bandera galicia">
+        </picture>
     </div>
     <small class="davys-grey-text bold">Haz click en los puntos para ver las recetas de cada comarca</small>
     <div id="galicia-map-section" class="galicia-map"></div>

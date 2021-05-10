@@ -1,5 +1,5 @@
-import galiciaMapImage from './src/images/galicia_no_background.png';
 import {data} from './src/scripts/data';
+import galiciaMapImage from './src/images/galicia_no_background.png';
 
 const galiciaMapSection = document.getElementById('galicia-map-section');
 const screenWidth = window.innerWidth;
@@ -75,6 +75,9 @@ function createCanvas(id, canvasWidthAndHeight) {
     canvas.width = canvasWidthAndHeight;
     canvas.height = canvasWidthAndHeight;
     canvas.id = id;
+    const p = document.createElement("p");
+    p.innerText = 'Mapa de galicia con las diferentes comarcas culinarias resaltadas y accesibles mediante click'
+    canvas.appendChild(p);
     return canvas;
 }
 

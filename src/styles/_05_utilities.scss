@@ -11,7 +11,8 @@
 }
 
 a.nav-link-active {
- color: darken($white, 20%) !important;
+  color: darken($white, 20%) !important;
+
   i {
     color: darken($white, 20%) !important;
   }
