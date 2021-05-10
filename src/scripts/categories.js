@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function buildCategoryListSection(categoryType, sectionToLoadIn) {
     data[categoryType].forEach(i => {
-        const comarcaDiv = buildCategory(i.title, i.image, i.url);
+        const comarcaDiv = buildCategory(i.title, i.image, i.url, i.alt, i.sizes, i.srcset);
         sectionToLoadIn.appendChild(comarcaDiv);
     });
 }
 
-function buildCategory(titleText, url, href) {
+function buildCategory(titleText, url, href, alt, sizes, srcset) {
     const div = document.createElement('div');
 
     const h2 = document.createElement('h2');
@@ -20,11 +20,23 @@ function buildCategory(titleText, url, href) {
 
     const img = document.createElement('img');
     img.src = url;
+    img.alt = alt;
+
+    if (sizes) {
+        img.sizes = sizes;
+    }
+
+    if (srcset) {
+        img.srcset = srcset;
+    }
+
     img.onclick = () => {
         window.location.href = href
     };
 
     div.appendChild(h2);
-    div.appendChild(img);
+    const picture = document.createElement('picture');
+    picture.appendChild(img)
+    div.appendChild(picture);
     return div;
 }
