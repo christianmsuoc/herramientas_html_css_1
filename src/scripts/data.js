@@ -16,26 +16,6 @@ import marina_scale_w_190 from '../images/comarcas/marina/marina_bnea34_c_scale_
 import marina_scale_w_612 from '../images/comarcas/marina/marina_bnea34_c_scale_w_612.jpg';
 import marina_scale_w_800 from '../images/comarcas/marina/marina_bnea34_c_scale_w_800.jpg';
 
-import galicia_scale_w_190 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_190.jpg';
-import galicia_scale_w_471 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_471.jpg';
-import galicia_scale_w_637 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_637.jpg';
-import galicia_scale_w_801 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_801.jpg';
-import galicia_scale_w_927 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_927.jpg';
-import galicia_scale_w_1033 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1033.jpg';
-import galicia_scale_w_1137 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1137.jpg';
-import galicia_scale_w_1243 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1243.jpg';
-import galicia_scale_w_1336 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1336.jpg';
-import galicia_scale_w_1425 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1425.jpg';
-import galicia_scale_w_1502 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1502.jpg';
-import galicia_scale_w_1591 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1591.jpg';
-import galicia_scale_w_1671 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1671.jpg';
-import galicia_scale_w_1750 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1750.jpg';
-import galicia_scale_w_1832 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1832.jpg';
-import galicia_scale_w_1906 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1906.jpg';
-import galicia_scale_w_1980 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1980.jpg';
-import galicia_scale_w_2043 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_2043.jpg';
-import galicia_scale_w_2048 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_2048.jpg';
-
 import empanada_maiz_scale_w_200 from '../images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_200.png';
 import empanada_maiz_scale_w_572 from '../images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_572.png';
 import empanada_maiz_scale_w_819 from '../images/recetas/empanada_maiz/empanada_maiz_qcwnxb_c_scale_w_819.png';
@@ -60,6 +40,10 @@ import huevos_pan_maiz_scale_w_1031 from '../images/recetas/huevos_pan_maiz/huev
 import huevos_pan_maiz_scale_w_1054 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1054.png';
 import huevos_pan_maiz_scale_w_1068 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068.png';
 
+
+import galicia_scale_w_200 from '../images/comarcas/galicia/galicia_closer_ozb9yo_c_scale_w_200.jpg';
+import galicia_scale_w_566 from '../images/comarcas/galicia/galicia_close_tu6jma_c_scale_w_566.jpg';
+import galicia_scale_w_2048 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_2048.jpg';
 
 const lavaColor = '#cf081fff';
 
@@ -108,50 +92,18 @@ export const data = {
             circleSize: 7,
             x: 0.665,
             y: 0.10,
+            sectionId: 'marina',
             sizes: '(max-width: 800px) 100vw, 800px',
             srcset:
                 marina_scale_w_190 + ' 190w' +
                 marina_scale_w_612 + ' 612w' +
                 marina_scale_w_800 + ' 800w',
-            sectionId: 'marina',
-            url: '../../comarca-marina.html',
             alt: 'imagen representativa de la comarca de A Mariña',
+            url: '../../comarca-marina.html',
             title: 'Recetas de A Mariña',
             image: marina_scale_w_800
-        },
-        {
-            color: lavaColor,
-            circleSize: 20,
-            x: 0.5,
-            y: 0.49,
-            sizes: '(max-width: 2048px) 100vw, 2048px',
-            srcset:
-                galicia_scale_w_190 + ' 190w' +
-                galicia_scale_w_471 + ' 471w' +
-                galicia_scale_w_637 + ' 637w' +
-                galicia_scale_w_801 + ' 801w' +
-                galicia_scale_w_927 + ' 927w' +
-                galicia_scale_w_1033 + ' 1033w' +
-                galicia_scale_w_1137 + ' 1137w' +
-                galicia_scale_w_1243 + ' 1243w' +
-                galicia_scale_w_1336 + ' 1336w' +
-                galicia_scale_w_1425 + ' 1425w' +
-                galicia_scale_w_1502 + ' 1502w' +
-                galicia_scale_w_1591 + ' 1591w' +
-                galicia_scale_w_1671 + ' 1671w' +
-                galicia_scale_w_1750 + ' 1750w' +
-                galicia_scale_w_1832 + ' 1832w' +
-                galicia_scale_w_1906 + ' 1906w' +
-                galicia_scale_w_1980 + ' 1980w' +
-                galicia_scale_w_2043 + ' 2043w' +
-                galicia_scale_w_2048 + ' 2048w',
-            sectionId: 'galicia',
-            url: '../../galicia.html',
-            alt: 'imagen representativa de Galicia',
-            title: 'Recetas de Galicia',
-            image: galicia_scale_w_2048
-
-        }],
+        }
+        ],
     recipesBarbanza: [
         {
             url: '../../receta-empanada.html',
