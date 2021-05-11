@@ -3,40 +3,51 @@ import {data} from "./data";
 document.addEventListener('DOMContentLoaded', () => {
     const sectionToLoadIn = document.getElementById('category-list');
     buildCategoryListSection(sectionToLoadIn.dataset.categories, sectionToLoadIn);
+
+    const galiciaSection = document.getElementById('galicia-section');
+
+    if (galiciaSection) {
+        galiciaSection.addEventListener('click', () => {
+            window.location.href = '../../galicia.html'
+        });
+    }
 });
 
 function buildCategoryListSection(categoryType, sectionToLoadIn) {
     data[categoryType].forEach(i => {
-        const comarcaDiv = buildCategory(i.title, i.image, i.url, i.alt, i.sizes, i.srcset);
+        const comarcaDiv = buildCategory(i);
         sectionToLoadIn.appendChild(comarcaDiv);
     });
 }
 
-function buildCategory(titleText, url, href, alt, sizes, srcset) {
+function buildCategory(image) {
     const div = document.createElement('div');
 
     const h2 = document.createElement('h2');
-    h2.innerText = titleText;
+    h2.innerText = image.title;
 
     const img = document.createElement('img');
-    img.src = url;
-    img.alt = alt;
 
-    if (sizes) {
-        img.sizes = sizes;
+    img.src = image.image;
+    img.alt = image.alt;
+
+    if (image.sizes) {
+        img.sizes = image.sizes;
     }
 
-    if (srcset) {
-        img.srcset = srcset;
+    if (image.srcset) {
+        img.srcset = image.srcset;
     }
 
     img.onclick = () => {
-        window.location.href = href
+        window.location.href = image.url
     };
 
     div.appendChild(h2);
+
     const picture = document.createElement('picture');
     picture.appendChild(img)
     div.appendChild(picture);
+
     return div;
 }
