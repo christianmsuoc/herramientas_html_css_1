@@ -19,3 +19,18 @@
   }
 }
 
+.presentation-title-wrapper {
+
+  @include desktop-screen {
+
+  }
+  img {
+
+    @include desktop-screen {
+      width: 50%;
+    }
+    @include mobile-screen {
+      width: 80%;
+    }
+  }
+}
