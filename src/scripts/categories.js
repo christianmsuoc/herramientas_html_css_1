@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function buildCategoryListSection(categoryType, sectionToLoadIn) {
     data[categoryType].forEach(i => {
-        const comarcaDiv = buildCategory(i);
-        sectionToLoadIn.appendChild(comarcaDiv);
+        if (i.sectionId !== 'galicia') {
+            const comarcaDiv = buildCategory(i);
+            sectionToLoadIn.appendChild(comarcaDiv);
+        }
     });
 }
 

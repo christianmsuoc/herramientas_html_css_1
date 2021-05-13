@@ -40,11 +40,6 @@ import huevos_pan_maiz_scale_w_1031 from '../images/recetas/huevos_pan_maiz/huev
 import huevos_pan_maiz_scale_w_1054 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1054.png';
 import huevos_pan_maiz_scale_w_1068 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068.png';
 
-
-import galicia_scale_w_200 from '../images/comarcas/galicia/galicia_closer_ozb9yo_c_scale_w_200.jpg';
-import galicia_scale_w_566 from '../images/comarcas/galicia/galicia_close_tu6jma_c_scale_w_566.jpg';
-import galicia_scale_w_2048 from '../images/comarcas/galicia/galicia_yeqtb6_c_scale_w_2048.jpg';
-
 const lavaColor = '#cf081fff';
 
 export const data = {
@@ -102,6 +97,13 @@ export const data = {
             url: '../../comarca-marina.html',
             title: 'Recetas de A Mariña',
             image: marina_scale_w_800
+        },
+        {
+            color: lavaColor,
+            circleSize: 20,
+            x: 0.5,
+            y: 0.49,
+            sectionId: 'galicia',
         }
         ],
     recipesBarbanza: [
