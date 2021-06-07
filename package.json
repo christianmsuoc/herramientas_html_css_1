@@ -23,6 +23,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "autoprefixer": "^10.2.5",
-    "lazyframe": "^2.2.4"
+    "lite-youtube-embed": "^0.2.0"
   }
 }

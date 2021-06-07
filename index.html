@@ -10,7 +10,8 @@
     <link rel="manifest" href="./src/images/favicon/site.webmanifest">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./src/styles/style.scss">
-
+    <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 </head>
 <body>
 <div class="web-section">
@@ -138,13 +139,17 @@
                             Sacamos los berberechos y escurrimos el agua. Reservamos.
                         </li>
                     </ul>
+                    <div>
+                        <lite-youtube videoid="hd71_nTNcig" style="background-image: url('https://i.ytimg.com/vi/hd71_nTNcig/hqdefault.jpg');"></lite-youtube>
+                    </div>
 
                     <div class="article-video">
-                        <iframe class="lazyframe" loading="lazy" rel="preconnect" width="560" height="315"
-                                src="https://www.youtube.com/embed/hd71_nTNcig"
-                                title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <lite-youtube videoid="hd71_nTNcig" style="background-image: url('https://i.ytimg.com/vi/hd71_nTNcig/hqdefault.jpg');"></lite-youtube>
+<!--                        <iframe class="lazyframe" loading="lazy" rel="preconnect" width="560" height="315"-->
+<!--                                src="https://www.youtube.com/embed/hd71_nTNcig"-->
+<!--                                title="YouTube video player"-->
+<!--                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                                allowfullscreen></iframe>-->
                     </div>
 
                     <p>Continua.... </p>
@@ -202,8 +207,8 @@
     <small class="davys-grey-text bold">Haz click en los puntos para ver las recetas de cada comarca</small>
     <div id="galicia-map-section" class="galicia-map"></div>
 </div>
+
 <script>
-    lazyframe(".lazyframe");
     displayLastArticle = true;
 </script>
 <script defer src="./index.js"></script>

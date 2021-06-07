@@ -1,11 +1,8 @@
 import {data} from './src/scripts/data';
-import lazyframe from "lazyframe";
 import galiciaMapImage from './src/images/galicia_no_background.png';
 
 const galiciaMapSection = document.getElementById('galicia-map-section');
 const screenWidth = window.innerWidth;
-
-lazyframe(".lazyframe");
 
 document.addEventListener('DOMContentLoaded', function () {
     const canvasWidthAndHeight = document.getElementById("galicia-map-section").offsetWidth * 0.7
