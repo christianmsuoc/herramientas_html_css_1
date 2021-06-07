@@ -1,0 +1,56 @@
+<svg width="755" height="290" xmlns="http://www.w3.org/2000/svg">
+    <g id="Layer_1">
+        <title>Layer 1</title>
+        <text transform="matrix(3.70625 0 0 6.4248 -353.946 -566.377)" stroke="#000"
+              xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_1" y="118.43121"
+              x="104.64863" stroke-width="0" fill="#cf081f">PRESENTACIÓN
+        </text>
+        <rect id="svg_2" height="48" width="30%" y="24" x="41" stroke="#000" fill="#cf081f"/>
+        <rect stroke="#000" id="svg_3" height="49" width="486.00002" y="209" x="35%" fill="#cf081f"/>
+    </g>
+
+ <style type="text/css"><![CDATA[
+
+     @keyframes loadRight {
+         0% {
+             width: 0;
+             opacity: 0.5;
+         }
+         100% {
+             width: var(--full-width);
+             opacity: 1;
+         }
+     }
+
+     @keyframes loadIn {
+         0% {
+             opacity: 0;
+         }
+
+         100% {
+             opacity: 1;
+         }
+     }
+
+      #svg_1 {
+        animation: loadIn;
+        animation-duration: 2.5s;
+      }
+
+     #svg_2 {
+         --full-width: 30%;
+         animation-duration: 1s;
+         animation-name: loadRight;
+     }
+
+     #svg_3 {
+         width: 0;
+         --full-width: 100%;
+         animation-delay: 1s;
+         animation-name: loadRight;
+         animation-duration: 2s;
+         animation-fill-mode: forwards;
+     }
+    ]]></style>
+</svg>
+
