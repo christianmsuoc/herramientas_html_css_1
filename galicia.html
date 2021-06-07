@@ -28,11 +28,74 @@
     </header>
     <main>
         <h1>Galicia</h1>
+        <div class="comarca-wrapper">
+            <div class="comarca-image">
+                <picture>
+                    <img loading="lazy"
+                            sizes="(max-width: 2048px) 100vw, 2048px"
+                            srcset="
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_190.jpg  190w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_471.jpg  471w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_637.jpg  637w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_801.jpg  801w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_927.jpg  927w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1033.jpg  1033w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1137.jpg  1137w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1243.jpg  1243w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1336.jpg  1336w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1425.jpg  1425w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1502.jpg  1502w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1591.jpg  1591w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1671.jpg  1671w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1750.jpg  1750w,
+                        ./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1832.jpg  1832w"
+                            src="./src/images/comarcas/galicia/galicia_yeqtb6_c_scale_w_1832.jpg"
+                            alt="Imagen representativa de galicia">
+                </picture>
+            </div>
+        </div>
+
+        <section id="category-list" class="categories-list" data-categories="recipesBarbanza"></section>
+
     </main>
+    <footer>
+        <div class="footer-wrapper">
+            <a href="./index.html" class="footer-index">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a class="footer-comarcas" href="./comarcas.html">
+                <i class="fas fa-map-marker-alt"></i> Comarcas
+            </a>
+            <a class="footer-presentation" href="./presentation.html"> <i class="fab fa-slideshare"></i> Presentación
+            </a>
+            <a class="footer-links" href="./links.html"> <i class="fas fa-link"></i> Enlaces </a>
+            <div class="footer-logo">
+                <picture>
+                    <img loading="lazy"
+                            sizes="(max-width: 1920px) 100vw, 1920px"
+                            srcset="
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_190.png 190w,
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_947.png 947w,
+                                ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png 1920w"
+                            src="src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png"
+                            alt="logo bandera galicia">
+                </picture>
+            </div>
+        </div>
+    </footer>
 </div>
 <div class="map-section" id="map-section">
-    <div class="galicia-logo">
-        <img src="./src/images/logo_bandera.png" alt="logo bandera galicia">
+    <div class="galicia-logo" >
+        <picture>
+            <img loading="lazy"
+                    sizes="(max-width: 1920px) 100vw, 1920px"
+                    srcset="
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_190.png 190w,
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_947.png 947w,
+                    ./src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png 1920w"
+                    src="src/images/logo_bandera/logo_bandera_w5yd8u_c_scale_w_1920.png"
+                    alt="logo bandera galicia">
+        </picture>
     </div>
     <small class="davys-grey-text bold">Haz click en los puntos para ver las recetas de cada comarca</small>
     <div id="galicia-map-section" class="galicia-map"></div>
