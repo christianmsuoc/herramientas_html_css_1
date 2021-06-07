@@ -16,19 +16,8 @@ import marina_scale_w_190 from '../images/comarcas/marina/marina_bnea34_c_scale_
 import marina_scale_w_612 from '../images/comarcas/marina/marina_bnea34_c_scale_w_612.jpg';
 import marina_scale_w_800 from '../images/comarcas/marina/marina_bnea34_c_scale_w_800.jpg';
 
-import empanada_maiz_scale_w_200 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_200.webp';
 import empanada_maiz_scale_w_391 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_391.webp';
-import empanada_maiz_scale_w_509 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_509.webp';
-import empanada_maiz_scale_w_595 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_595.webp';
 import empanada_maiz_scale_w_688 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_688.webp';
-import empanada_maiz_scale_w_766 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_766.webp';
-import empanada_maiz_scale_w_826 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_826.webp';
-import empanada_maiz_scale_w_852 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_852.webp';
-import empanada_maiz_scale_w_880 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_880.webp';
-import empanada_maiz_scale_w_1066 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_1066.webp';
-import empanada_maiz_scale_w_1084 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_1084.webp';
-import empanada_maiz_scale_w_1184 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_1184.webp';
-import empanada_maiz_scale_w_1190 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_1190.webp';
 import empanada_maiz_scale_w_1200 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_1200.webp';
 
 import huevos_pan_maiz_scale_w_200 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_200.png';
@@ -119,19 +108,8 @@ export const data = {
             alt: 'imagen de una receta de empanada de maíz',
             sizes: '(max-width: 1200px) 100vw, 1200px',
             srcset:
-            empanada_maiz_scale_w_200 + ' 200w,' +
             empanada_maiz_scale_w_391 + ' 391w,' +
-            empanada_maiz_scale_w_509 + ' 509w,' +
-            empanada_maiz_scale_w_595 + ' 595w,' +
             empanada_maiz_scale_w_688 + ' 688w,' +
-            empanada_maiz_scale_w_766 + ' 766w,' +
-            empanada_maiz_scale_w_826 + ' 826w,' +
-            empanada_maiz_scale_w_852 + ' 852w,' +
-            empanada_maiz_scale_w_880 + ' 880w,' +
-            empanada_maiz_scale_w_1066 + ' 1066w,' +
-            empanada_maiz_scale_w_1084 + ' 1084w,' +
-            empanada_maiz_scale_w_1184 + ' 1184w,' +
-            empanada_maiz_scale_w_1190 + ' 1190w,' +
             empanada_maiz_scale_w_1200 + ' 1200w,',
             title: 'Empanada de maíz',
             image: empanada_maiz_scale_w_1200
