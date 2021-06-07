@@ -4,8 +4,7 @@ import galiciaMapImage from './src/images/galicia_no_background.png';
 const galiciaMapSection = document.getElementById('galicia-map-section');
 const screenWidth = window.innerWidth;
 
-window.onload = () => {
-
+document.addEventListener('DOMContentLoaded', function () {
     const canvasWidthAndHeight = document.getElementById("galicia-map-section").offsetWidth * 0.7
     const canvas = createCanvas('galicia-canvas', canvasWidthAndHeight);
 
@@ -19,7 +18,7 @@ window.onload = () => {
         galiciaMapSection.appendChild(canvas);
         drawElements(ctx, canvas);
     }
-}
+});
 
 function drawElements(context, canvas) {
     const w = canvas.width;
