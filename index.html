@@ -140,11 +140,11 @@
                     </ul>
 
                     <div class="article-video">
-<!--                        <iframe loading="lazy" rel="preconnect" width="560" height="315"-->
-<!--                                src="https://www.youtube.com/embed/hd71_nTNcig"-->
-<!--                                title="YouTube video player"-->
-<!--                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
-<!--                                allowfullscreen></iframe>-->
+                        <iframe class="lazyframe" loading="lazy" rel="preconnect" width="560" height="315"
+                                src="https://www.youtube.com/embed/hd71_nTNcig"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </div>
 
                     <p>Continua.... </p>
@@ -204,6 +204,7 @@
 </div>
 <script src="node_modules/lazyframe/dist/lazyframe.min.js"></script>
 <script>
+    lazyframe(".lazyframe");
     displayLastArticle = true;
 </script>
 <script defer src="./index.js"></script>
