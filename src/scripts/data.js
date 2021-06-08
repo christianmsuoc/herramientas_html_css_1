@@ -1,40 +1,33 @@
-import ferrolterra_w_190 from '../images/comarcas/ferrolterra/ferrolterra_vk82tn_c_scale_w_190.jpg';
-import ferrolterra_w_435 from '../images/comarcas/ferrolterra/ferrolterra_vk82tn_c_scale_w_435.jpg';
-import ferrolterra_w_607 from '../images/comarcas/ferrolterra/ferrolterra_vk82tn_c_scale_w_607.jpg';
-import ferrolterra_w_725 from '../images/comarcas/ferrolterra/ferrolterra_vk82tn_c_scale_w_725.jpg';
-import ferrolterra_w_827 from '../images/comarcas/ferrolterra/ferrolterra_vk82tn_c_scale_w_827.jpg';
-import ferrolterra_w_900 from '../images/comarcas/ferrolterra/ferrolterra_vk82tn_c_scale_w_900.jpg';
+import ferrolterra_zcj5f1_c_scale_w_200 from '../images/comarcas/ferrolterra/ferrolterra_zcj5f1_c_scale_w_200.webp'
+import ferrolterra_zcj5f1_c_scale_w_461 from '../images/comarcas/ferrolterra/ferrolterra_zcj5f1_c_scale_w_461.webp'
+import ferrolterra_zcj5f1_c_scale_w_627 from '../images/comarcas/ferrolterra/ferrolterra_zcj5f1_c_scale_w_627.webp'
+import ferrolterra_zcj5f1_c_scale_w_840 from '../images/comarcas/ferrolterra/ferrolterra_zcj5f1_c_scale_w_840.webp'
+import ferrolterra_zcj5f1_c_scale_w_900 from '../images/comarcas/ferrolterra/ferrolterra_zcj5f1_c_scale_w_900.webp'
 
-import barbanza_w_190 from '../images/comarcas/barbanza/barbanza_scale_w_190.jpg';
-import barbanza_w_482 from '../images/comarcas/barbanza/barbanza_scale_w_482.jpg';
-import barbanza_w_659 from '../images/comarcas/barbanza/barbanza_scale_w_659.jpg';
-import barbanza_w_800 from '../images/comarcas/barbanza/barbanza_scale_w_800.jpg';
-import barbanza_w_924 from '../images/comarcas/barbanza/barbanza_scale_w_924.jpg';
-import barbanza_w_959 from '../images/comarcas/barbanza/barbanza_scale_w_959.jpg';
+import barbanza_d63d0g_c_scale_w_200 from '../images/comarcas/barbanza/barbanza_d63d0g_c_scale_w_200.webp';
+import barbanza_d63d0g_c_scale_w_487 from '../images/comarcas/barbanza/barbanza_d63d0g_c_scale_w_487.webp';
+import barbanza_d63d0g_c_scale_w_641 from '../images/comarcas/barbanza/barbanza_d63d0g_c_scale_w_641.webp';
+import barbanza_d63d0g_c_scale_w_764 from '../images/comarcas/barbanza/barbanza_d63d0g_c_scale_w_764.webp';
+import barbanza_d63d0g_c_scale_w_890 from '../images/comarcas/barbanza/barbanza_d63d0g_c_scale_w_890.webp';
+import barbanza_d63d0g_c_scale_w_959 from '../images/comarcas/barbanza/barbanza_d63d0g_c_scale_w_959.webp';
 
-import marina_scale_w_190 from '../images/comarcas/marina/marina_bnea34_c_scale_w_190.jpg';
-import marina_scale_w_612 from '../images/comarcas/marina/marina_bnea34_c_scale_w_612.jpg';
-import marina_scale_w_800 from '../images/comarcas/marina/marina_bnea34_c_scale_w_800.jpg';
+
+import marina_scale_w_200 from '../images/comarcas/marina/marina_i4bnmc_c_scale_w_200.webp';
+import marina_scale_w_719 from '../images/comarcas/marina/marina_i4bnmc_c_scale_w_719.webp';
+import marina_scale_w_800 from '../images/comarcas/marina/marina_i4bnmc_c_scale_w_800.webp';
 
 import empanada_maiz_scale_w_391 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_391.webp';
 import empanada_maiz_scale_w_688 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_688.webp';
 import empanada_maiz_scale_w_1200 from '../images/recetas/empanada_maiz/empanada_maiz_e3byq0_c_scale_w_1200.webp';
 
-import huevos_pan_maiz_scale_w_200 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_200.png';
-import huevos_pan_maiz_scale_w_293 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_293.png';
-import huevos_pan_maiz_scale_w_407 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_407.png';
-import huevos_pan_maiz_scale_w_507 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_507.png';
-import huevos_pan_maiz_scale_w_596 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_596.png';
-import huevos_pan_maiz_scale_w_680 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_680.png';
-import huevos_pan_maiz_scale_w_767 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_767.png';
-import huevos_pan_maiz_scale_w_834 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_834.png';
-import huevos_pan_maiz_scale_w_906 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_906.png';
-import huevos_pan_maiz_scale_w_973 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_973.png';
-import huevos_pan_maiz_scale_w_987 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_987.png';
-import huevos_pan_maiz_scale_w_995 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_995.png';
-import huevos_pan_maiz_scale_w_1031 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1031.png';
-import huevos_pan_maiz_scale_w_1054 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1054.png';
-import huevos_pan_maiz_scale_w_1068 from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068.png';
+import huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_200
+    from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_200.webp';
+import huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_517
+    from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_517.webp';
+import huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_835
+    from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_835.webp';
+import huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_1068
+    from '../images/recetas/huevos_pan_maiz/huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_1068.webp';
 
 const lavaColor = '#cf081fff';
 
@@ -46,18 +39,18 @@ export const data = {
             x: 0.18,
             y: 0.53,
             sectionId: 'barbanza',
-            sizes: '(max-width: 959px) 100vw, 959px',
+            sizes: '(max-width: 350px) 200px, (max-width: 650px) 487px,  (max-width: 850px) 641px, (max-width: 1024px) 959px, 840px',
             srcset:
-                barbanza_w_190 + ' 190w,' +
-                barbanza_w_482 + ' 482w,' +
-                barbanza_w_659 + ' 659w,' +
-                barbanza_w_800 + ' 800w,' +
-                barbanza_w_924 + ' 924w,' +
-                barbanza_w_959 + ' 959w',
+            barbanza_d63d0g_c_scale_w_200 + ' 200w,' +
+            barbanza_d63d0g_c_scale_w_487 + ' 487w,' +
+            barbanza_d63d0g_c_scale_w_641 + ' 641w,' +
+            barbanza_d63d0g_c_scale_w_764 + ' 764w,' +
+            barbanza_d63d0g_c_scale_w_890 + ' 890w,' +
+            barbanza_d63d0g_c_scale_w_959 + ' 959w,',
             url: '../../comarca-barbanza.html',
             alt: 'imagen representativa de la comarca del barbanza',
             title: 'Recetas de Barbanza',
-            image: barbanza_w_959
+            image: barbanza_d63d0g_c_scale_w_890
         },
         {
             color: lavaColor,
@@ -65,18 +58,17 @@ export const data = {
             x: 0.42,
             y: 0.155,
             sectionId: 'ferrolterra',
-            sizes: '(max-width: 900px) 100vw, 900px',
+            sizes: '(max-width: 350px) 200px, (max-width: 850px) 627px, (max-width: 1024px) 900px, 840px',
             srcset:
-                ferrolterra_w_190 + ' 190w,' +
-                ferrolterra_w_435 + ' 435w,' +
-                ferrolterra_w_607 + ' 607w,' +
-                ferrolterra_w_725 + ' 725w,' +
-                ferrolterra_w_827 + ' 827w,' +
-                ferrolterra_w_900 + ' 900w',
+            ferrolterra_zcj5f1_c_scale_w_200 + ' 200w,' +
+            ferrolterra_zcj5f1_c_scale_w_461 + ' 461w,' +
+            ferrolterra_zcj5f1_c_scale_w_627 + ' 627w,' +
+            ferrolterra_zcj5f1_c_scale_w_840 + ' 840w,' +
+            ferrolterra_zcj5f1_c_scale_w_900 + ' 900w,',
             alt: 'imagen representativa de la comarca de ferrolterra',
             url: '../../comarca-ferrolterra.html',
             title: 'Recetas de Ferrolterra',
-            image: ferrolterra_w_900
+            image: ferrolterra_zcj5f1_c_scale_w_840
         },
         {
             color: lavaColor,
@@ -84,15 +76,15 @@ export const data = {
             x: 0.665,
             y: 0.10,
             sectionId: 'marina',
-            sizes: '(max-width: 800px) 100vw, 800px',
+            sizes: '(max-width: 350px) 200px, (max-width: 1024px) 800px, 719px',
             srcset:
-                marina_scale_w_190 + ' 190w' +
-                marina_scale_w_612 + ' 612w' +
+                marina_scale_w_200 + ' 200w' +
+                marina_scale_w_719 + ' 719w' +
                 marina_scale_w_800 + ' 800w',
             alt: 'imagen representativa de la comarca de A Mariña',
             url: '../../comarca-marina.html',
             title: 'Recetas de A Mariña',
-            image: marina_scale_w_800
+            image: marina_scale_w_200
         },
         {
             color: lavaColor,
@@ -101,41 +93,30 @@ export const data = {
             y: 0.49,
             sectionId: 'galicia',
         }
-        ],
+    ],
     recipesBarbanza: [
         {
             url: '../../receta-empanada.html',
             alt: 'imagen de una receta de empanada de maíz',
-            sizes: '(max-width: 1200px) 100vw, 1200px',
+            sizes: '(max-width: 400px) 252px, (max-width: 1024px) 716px, 1217px',
             srcset:
-            empanada_maiz_scale_w_391 + ' 391w,' +
-            empanada_maiz_scale_w_688 + ' 688w,' +
-            empanada_maiz_scale_w_1200 + ' 1200w,',
+                empanada_maiz_scale_w_391 + ' 391w,' +
+                empanada_maiz_scale_w_688 + ' 688w,' +
+                empanada_maiz_scale_w_1200 + ' 1200w,',
             title: 'Empanada de maíz',
             image: empanada_maiz_scale_w_1200
         },
         {
             url: '../../receta-huevos-pan-maiz.html',
             alt: 'imagen de una receta de huevos con pan de maíz',
-            sizes: '(max-width: 1068px) 100vw, 1068px',
+            sizes: '(max-width: 575px) 517px, (max-width: 1024px) 1068px, 517px',
             srcset:
-                huevos_pan_maiz_scale_w_200 + ' 200w' +
-                huevos_pan_maiz_scale_w_293 + ' 293w' +
-                huevos_pan_maiz_scale_w_407 + ' 407w' +
-                huevos_pan_maiz_scale_w_507 + ' 507w' +
-                huevos_pan_maiz_scale_w_596 + ' 596w' +
-                huevos_pan_maiz_scale_w_680 + ' 680w' +
-                huevos_pan_maiz_scale_w_767 + ' 767w' +
-                huevos_pan_maiz_scale_w_834 + ' 834w' +
-                huevos_pan_maiz_scale_w_906 + ' 906w' +
-                huevos_pan_maiz_scale_w_973 + ' 973w' +
-                huevos_pan_maiz_scale_w_987 + ' 987w' +
-                huevos_pan_maiz_scale_w_995 + ' 995w' +
-                huevos_pan_maiz_scale_w_1031 + ' 031w' +
-                huevos_pan_maiz_scale_w_1054 + ' 054w' +
-                huevos_pan_maiz_scale_w_1068 + ' 068w',
+                huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_200 + ' 200w' +
+                huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_517 + ' 517w' +
+                huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_835 + ' 835w' +
+                huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_1068 + ' 1068w',
             title: 'Huevos con pan de maíz',
-            image: huevos_pan_maiz_scale_w_1068
+            image: huevos_pan_maiz_kgcxhm_c_scale_w_1068_ojqzym_c_scale_w_1068
         }
     ]
 }
